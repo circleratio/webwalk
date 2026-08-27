@@ -1,0 +1,1002 @@
+[
+  {
+    "no": 1,
+    "poet": "天智天皇",
+    "kami_kanji": "秋の田のかりほの庵の苫をあらみ",
+    "shimo_kanji": "わが衣手は露にぬれつつ",
+    "kami_hiragana": "あきのたのかりほのいほのとまをあらみ",
+    "shimo_hiragana": "わがころもではつゆにぬれつつ",
+    "kimariji": "あきの",
+    "kimariji_len": 3
+  },
+  {
+    "no": 2,
+    "poet": "持統天皇",
+    "kami_kanji": "春過ぎて夏来にけらし白妙の",
+    "shimo_kanji": "衣干すてふ天の香具山",
+    "kami_hiragana": "はるすぎてなつきにけらししろたへの",
+    "shimo_hiragana": "ころもほすてふあまのかぐやま",
+    "kimariji": "はるす",
+    "kimariji_len": 3
+  },
+  {
+    "no": 3,
+    "poet": "柿本人麻呂",
+    "kami_kanji": "あしびきの山鳥の尾のしだり尾の",
+    "shimo_kanji": "ながながし夜をひとりかも寝む",
+    "kami_hiragana": "あしびきのやまどりのをのしだりをの",
+    "shimo_hiragana": "ながながしよをひとりかもねむ",
+    "kimariji": "あし",
+    "kimariji_len": 2
+  },
+  {
+    "no": 4,
+    "poet": "山辺赤人",
+    "kami_kanji": "田子の浦にうち出でてみれば白妙の",
+    "shimo_kanji": "富士の高嶺に雪は降りつつ",
+    "kami_hiragana": "たごのうらにうちいでてみればしろたへの",
+    "shimo_hiragana": "ふじのたかねにゆきはふりつつ",
+    "kimariji": "たご",
+    "kimariji_len": 2
+  },
+  {
+    "no": 5,
+    "poet": "猿丸大夫",
+    "kami_kanji": "奥山に紅葉踏み分け鳴く鹿の",
+    "shimo_kanji": "声聞く時ぞ秋は悲しき",
+    "kami_hiragana": "おくやまにもみぢふみわけなくしかの",
+    "shimo_hiragana": "こゑきくときぞあきはかなしき",
+    "kimariji": "おく",
+    "kimariji_len": 2
+  },
+  {
+    "no": 6,
+    "poet": "中納言家持",
+    "kami_kanji": "かささぎの渡せる橋に置く霜の",
+    "shimo_kanji": "白きを見れば夜ぞ更けにける",
+    "kami_hiragana": "かささぎのわたせるはしにおくしもの",
+    "shimo_hiragana": "しろきをみればよぞふけにける",
+    "kimariji": "かさ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 7,
+    "poet": "安倍仲麻呂",
+    "kami_kanji": "天の原ふりさけみれば春日なる",
+    "shimo_kanji": "三笠の山に出でし月かも",
+    "kami_hiragana": "あまのはらふりさけみればかすがなる",
+    "shimo_hiragana": "みかさのやまにいでしつきかも",
+    "kimariji": "あまの",
+    "kimariji_len": 3
+  },
+  {
+    "no": 8,
+    "poet": "喜撰法師",
+    "kami_kanji": "わが庵は都の辰巳しかぞ住む",
+    "shimo_kanji": "世をうぢ山と人はいふなり",
+    "kami_hiragana": "わがいほはみやこのたつみしかぞすむ",
+    "shimo_hiragana": "よをうぢやまとひとはいふなり",
+    "kimariji": "わがい",
+    "kimariji_len": 3
+  },
+  {
+    "no": 9,
+    "poet": "小野小町",
+    "kami_kanji": "花の色は移りにけりないたづらに",
+    "shimo_kanji": "わが身世にふるながめせしまに",
+    "kami_hiragana": "はなのいろはうつりにけりないたづらに",
+    "shimo_hiragana": "わがみよにふるながめせしまに",
+    "kimariji": "はなの",
+    "kimariji_len": 3
+  },
+  {
+    "no": 10,
+    "poet": "蝉丸",
+    "kami_kanji": "これやこの行くも帰るも別れては",
+    "shimo_kanji": "知るも知らぬも逢坂の関",
+    "kami_hiragana": "これやこのゆくもかへるもわかれては",
+    "shimo_hiragana": "しるもしらぬもあふさかのせき",
+    "kimariji": "これ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 11,
+    "poet": "参議篁",
+    "kami_kanji": "わたの原八十島かけて漕ぎ出でぬと",
+    "shimo_kanji": "人にはつげよ海人の釣船",
+    "kami_hiragana": "わたのはらやそしまかけてこぎいでぬと",
+    "shimo_hiragana": "ひとにはつげよあまのつりぶね",
+    "kimariji": "わたのはらや",
+    "kimariji_len": 6
+  },
+  {
+    "no": 12,
+    "poet": "僧正遍昭",
+    "kami_kanji": "天つ風雲の通ひ路吹きとぢよ",
+    "shimo_kanji": "乙女の姿しばしとどめむ",
+    "kami_hiragana": "あまつかぜくものかよひぢふきとぢよ",
+    "shimo_hiragana": "をとめのすがたしばしとどめむ",
+    "kimariji": "あまつ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 13,
+    "poet": "陽成院",
+    "kami_kanji": "筑波嶺の峰より落つるみなの川",
+    "shimo_kanji": "恋ぞつもりて淵となりぬる",
+    "kami_hiragana": "つくばねのみねよりおつるみなのがは",
+    "shimo_hiragana": "こひぞつもりてふちとなりぬる",
+    "kimariji": "つく",
+    "kimariji_len": 2
+  },
+  {
+    "no": 14,
+    "poet": "河原左大臣",
+    "kami_kanji": "陸奥のしのぶもぢずりたれゆえに",
+    "shimo_kanji": "乱れそめにしわれならなくに",
+    "kami_hiragana": "みちのくのしのぶもぢずりたれゆゑに",
+    "shimo_hiragana": "みだれそめにしわれならなくに",
+    "kimariji": "みち",
+    "kimariji_len": 2
+  },
+  {
+    "no": 15,
+    "poet": "光孝天皇",
+    "kami_kanji": "君がため春の野に出でて若菜摘む",
+    "shimo_kanji": "わが衣手に雪は降りつつ",
+    "kami_hiragana": "きみがためはるののにいでてわかなつむ",
+    "shimo_hiragana": "わがころもでにゆきはふりつつ",
+    "kimariji": "きみがためは",
+    "kimariji_len": 6
+  },
+  {
+    "no": 16,
+    "poet": "中納言行平",
+    "kami_kanji": "立ち別れいなばの山の峰に生ふる",
+    "shimo_kanji": "まつとし聞かば今帰り来む",
+    "kami_hiragana": "たちわかれいなばのやまのみねにおふる",
+    "shimo_hiragana": "まつとしきかばいまかへりこむ",
+    "kimariji": "たち",
+    "kimariji_len": 2
+  },
+  {
+    "no": 17,
+    "poet": "在原業平朝臣",
+    "kami_kanji": "ちはやぶる神代も聞かず竜田川",
+    "shimo_kanji": "から紅に水くくるとは",
+    "kami_hiragana": "ちはやぶるかみよもきかずたつたがは",
+    "shimo_hiragana": "からくれなゐにみづくくるとは",
+    "kimariji": "ちは",
+    "kimariji_len": 2
+  },
+  {
+    "no": 18,
+    "poet": "藤原敏行朝臣",
+    "kami_kanji": "住の江の岸に寄る波よるさへや",
+    "shimo_kanji": "夢の通ひ路人目よくらむ",
+    "kami_hiragana": "すみのえのきしによるなみよるさへや",
+    "shimo_hiragana": "ゆめのかよひぢひとめよくらむ",
+    "kimariji": "す",
+    "kimariji_len": 1
+  },
+  {
+    "no": 19,
+    "poet": "伊勢",
+    "kami_kanji": "難波潟短き葦のふしの間も",
+    "shimo_kanji": "逢はでこの世を過ぐしてよとや",
+    "kami_hiragana": "なにはがたみじかきあしのふしのまも",
+    "shimo_hiragana": "あはでこのよをすぐしてよとや",
+    "kimariji": "なにはが",
+    "kimariji_len": 4
+  },
+  {
+    "no": 20,
+    "poet": "元良親王",
+    "kami_kanji": "わびぬれば今はた同じ難波なる",
+    "shimo_kanji": "身をつくしても逢はむとぞ思ふ",
+    "kami_hiragana": "わびぬればいまはたおなじなにはなる",
+    "shimo_hiragana": "みをつくしてもあはむとぞおもふ",
+    "kimariji": "わび",
+    "kimariji_len": 2
+  },
+  {
+    "no": 21,
+    "poet": "素性法師",
+    "kami_kanji": "今来むといひしばかりに長月の",
+    "shimo_kanji": "有明の月を待ち出でつるかな",
+    "kami_hiragana": "いまこむといひしばかりにながつきの",
+    "shimo_hiragana": "ありあけのつきをまちいでつるかな",
+    "kimariji": "いまこ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 22,
+    "poet": "文屋康秀",
+    "kami_kanji": "吹くからに秋の草木のしをるれば",
+    "shimo_kanji": "むべ山風を嵐といふらむ",
+    "kami_hiragana": "ふくからにあきのくさきのしをるれば",
+    "shimo_hiragana": "むべやまかぜをあらしといふらむ",
+    "kimariji": "ふ",
+    "kimariji_len": 1
+  },
+  {
+    "no": 23,
+    "poet": "大江千里",
+    "kami_kanji": "月見れば千々にものこそ悲しけれ",
+    "shimo_kanji": "わが身ひとつの秋にはあらねど",
+    "kami_hiragana": "つきみればちぢにものこそかなしけれ",
+    "shimo_hiragana": "わがみひとつのあきにはあらねど",
+    "kimariji": "つき",
+    "kimariji_len": 2
+  },
+  {
+    "no": 24,
+    "poet": "菅家",
+    "kami_kanji": "このたびは幣もとりあへず手向山",
+    "shimo_kanji": "紅葉の錦神のまにまに",
+    "kami_hiragana": "このたびはぬさもとりあへずたむけやま",
+    "shimo_hiragana": "もみぢのにしきかみのまにまに",
+    "kimariji": "この",
+    "kimariji_len": 2
+  },
+  {
+    "no": 25,
+    "poet": "三条右大臣",
+    "kami_kanji": "名にし負はば逢坂山のさねかずら",
+    "shimo_kanji": "人に知られでくるよしもがな",
+    "kami_hiragana": "なにしおはばあふさかやまのさねかづら",
+    "shimo_hiragana": "ひとにしられでくるよしもがな",
+    "kimariji": "なにし",
+    "kimariji_len": 3
+  },
+  {
+    "no": 26,
+    "poet": "貞信公",
+    "kami_kanji": "小倉山峰のもみぢ葉心あらば",
+    "shimo_kanji": "今ひとたびのみゆき待たなむ",
+    "kami_hiragana": "をぐらやまみねのもみぢばこころあらば",
+    "shimo_hiragana": "いまひとたびのみゆきまたなむ",
+    "kimariji": "をぐ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 27,
+    "poet": "中納言兼輔",
+    "kami_kanji": "みかの原わきて流るる泉川",
+    "shimo_kanji": "いつ見きとてか恋しかるらむ",
+    "kami_hiragana": "みかのはらわきてながるるいづみがは",
+    "shimo_hiragana": "いつみきとてかこひしかるらむ",
+    "kimariji": "みかの",
+    "kimariji_len": 3
+  },
+  {
+    "no": 28,
+    "poet": "源宗于朝臣",
+    "kami_kanji": "山里は冬ぞ寂しさまさりける",
+    "shimo_kanji": "人目も草もかれぬと思へば",
+    "kami_hiragana": "やまざとはふゆぞさびしさまさりける",
+    "shimo_hiragana": "ひとめもくさもかれぬとおもへば",
+    "kimariji": "やまざ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 29,
+    "poet": "凡河内躬恒",
+    "kami_kanji": "心あてに折らばや折らむ初霜の",
+    "shimo_kanji": "置きまどはせる白菊の花",
+    "kami_hiragana": "こころあてにをらばやをらむはつしもの",
+    "shimo_hiragana": "おきまどはせるしらぎくのはな",
+    "kimariji": "こころあ",
+    "kimariji_len": 4
+  },
+  {
+    "no": 30,
+    "poet": "壬生忠岑",
+    "kami_kanji": "有明のつれなく見えし別れより",
+    "shimo_kanji": "暁ばかり憂きものはなし",
+    "kami_hiragana": "ありあけのつれなくみえしわかれより",
+    "shimo_hiragana": "あかつきばかりうきものはなし",
+    "kimariji": "ありあ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 31,
+    "poet": "坂上是則",
+    "kami_kanji": "朝ぼらけ有明の月と見るまでに",
+    "shimo_kanji": "吉野の里に降れる白雪",
+    "kami_hiragana": "あさぼらけありあけのつきとみるまでに",
+    "shimo_hiragana": " よしののさとに ふれるしらゆき",
+    "kimariji": "あさぼらけあ",
+    "kimariji_len": 6
+  },
+  {
+    "no": 32,
+    "poet": "春道列樹",
+    "kami_kanji": "山川に風のかけたるしがらみは",
+    "shimo_kanji": "流れもあへぬ紅葉なりけり",
+    "kami_hiragana": "やまがはにかぜのかけたるしがらみは",
+    "shimo_hiragana": "ながれもあへぬもみぢなりけり",
+    "kimariji": "やまが",
+    "kimariji_len": 3
+  },
+  {
+    "no": 33,
+    "poet": "紀友則",
+    "kami_kanji": "ひさかたの光のどけき春の日に",
+    "shimo_kanji": "しづ心なく花の散るらむ",
+    "kami_hiragana": "ひさかたのひかりのどけきはるのひに",
+    "shimo_hiragana": "しづこころなくはなのちるらむ",
+    "kimariji": "ひさ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 34,
+    "poet": "藤原興風",
+    "kami_kanji": "誰をかも知る人にせむ高砂の",
+    "shimo_kanji": "松も昔の友ならなくに",
+    "kami_hiragana": "たれをかもしるひとにせむたかさごの",
+    "shimo_hiragana": "まつもむかしのともならなくに",
+    "kimariji": "たれ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 35,
+    "poet": "紀貫之",
+    "kami_kanji": "人はいさ心も知らずふるさとは",
+    "shimo_kanji": "花ぞ昔の香に匂ひける",
+    "kami_hiragana": "ひとはいさこころもしらずふるさとは",
+    "shimo_hiragana": "はなぞむかしのかににほひける",
+    "kimariji": "ひとは",
+    "kimariji_len": 3
+  },
+  {
+    "no": 36,
+    "poet": "清原深養父",
+    "kami_kanji": "夏の夜はまだ宵ながら明けぬるを",
+    "shimo_kanji": "雲のいずこに月宿るらむ",
+    "kami_hiragana": "なつのよはまだよひながらあけぬるを",
+    "shimo_hiragana": "くものいづこにつきやどるらむ",
+    "kimariji": "なつ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 37,
+    "poet": "文屋朝康",
+    "kami_kanji": "白露に風の吹きしく秋の野は",
+    "shimo_kanji": "つらぬきとめぬ玉ぞ散りける",
+    "kami_hiragana": "しらつゆにかぜのふきしくあきののは",
+    "shimo_hiragana": "つらぬきとめぬたまぞちりける",
+    "kimariji": "しら",
+    "kimariji_len": 2
+  },
+  {
+    "no": 38,
+    "poet": "右近",
+    "kami_kanji": "忘らるる身をば思はず誓ひてし",
+    "shimo_kanji": "人の命の惜しくもあるかな",
+    "kami_hiragana": "わすらるるみをばおもはずちかひてし",
+    "shimo_hiragana": "ひとのいのちのをしくもあるかな",
+    "kimariji": "わすら",
+    "kimariji_len": 3
+  },
+  {
+    "no": 39,
+    "poet": "参議等",
+    "kami_kanji": "浅茅生の小野の篠原忍ぶれど",
+    "shimo_kanji": "あまりてなどか人の恋しき",
+    "kami_hiragana": "あさぢふのをののしのはらしのぶれど",
+    "shimo_hiragana": "あまりてなどかひとのこひしき",
+    "kimariji": "あさぢ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 40,
+    "poet": "平兼盛",
+    "kami_kanji": "忍ぶれど色に出でにけりわが恋は",
+    "shimo_kanji": "ものや思ふと人の問ふまで",
+    "kami_hiragana": "しのぶれどいろにいでにけりわがこひは",
+    "shimo_hiragana": "ものやおもふとひとのとふまで",
+    "kimariji": "しの",
+    "kimariji_len": 2
+  },
+  {
+    "no": 41,
+    "poet": "壬生忠見",
+    "kami_kanji": "恋すてふわが名はまだき立ちにけり",
+    "shimo_kanji": "人知れずこそ思ひそめしか",
+    "kami_hiragana": "こひすてふわがなはまだきたちにけり",
+    "shimo_hiragana": "ひとしれずこそおもひそめしか",
+    "kimariji": "こひ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 42,
+    "poet": "清原元輔",
+    "kami_kanji": "契りきなかたみに袖をしぼりつつ",
+    "shimo_kanji": "末の松山波越さじとは",
+    "kami_hiragana": "ちぎりきなかたみにそでをしぼりつつ",
+    "shimo_hiragana": "すゑのまつやまなみこさじとは",
+    "kimariji": "ちぎりき",
+    "kimariji_len": 4
+  },
+  {
+    "no": 43,
+    "poet": "権中納言敦忠",
+    "kami_kanji": "逢ひ見ての後の心にくらぶれば",
+    "shimo_kanji": "昔はものを思はざりけり",
+    "kami_hiragana": "あひみてののちのこころにくらぶれば",
+    "shimo_hiragana": "むかしはものをおもはざりけり",
+    "kimariji": "あひ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 44,
+    "poet": "中納言朝忠",
+    "kami_kanji": "逢ふことの絶えてしなくはなかなかに",
+    "shimo_kanji": "人をも身をも恨みざらまし",
+    "kami_hiragana": "あふことのたえてしなくはなかなかに",
+    "shimo_hiragana": "ひとをもみをもうらみざらまし",
+    "kimariji": "あふこ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 45,
+    "poet": "謙徳公",
+    "kami_kanji": "あはれともいふべき人は思ほえで",
+    "shimo_kanji": "身のいたずらになりぬべきかな",
+    "kami_hiragana": "あはれともいふべきひとはおもほえで",
+    "shimo_hiragana": "みのいたづらになりぬべきかな",
+    "kimariji": "あはれ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 46,
+    "poet": "曾禰好忠",
+    "kami_kanji": "由良の戸を渡る舟人かぢをたえ",
+    "shimo_kanji": "ゆくへも知らぬ恋の道かな",
+    "kami_hiragana": "ゆらのとをわたるふなびとかぢをたえ",
+    "shimo_hiragana": "ゆくへもしらぬこひのみちかな",
+    "kimariji": "ゆら",
+    "kimariji_len": 2
+  },
+  {
+    "no": 47,
+    "poet": "恵慶法師",
+    "kami_kanji": "八重むぐら茂れる宿のさびしきに",
+    "shimo_kanji": "人こそ見えね秋は来にけり",
+    "kami_hiragana": "やへむぐらしげれるやどのさびしきに",
+    "shimo_hiragana": "ひとこそみえねあきはきにけり",
+    "kimariji": "やへ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 48,
+    "poet": "源重之",
+    "kami_kanji": "風をいたみ岩うつ波のおのれのみ",
+    "shimo_kanji": "くだけてものを思ふころかな",
+    "kami_hiragana": "かぜをいたみいはうつなみのおのれのみ",
+    "shimo_hiragana": "くだけてものをおもふころかな",
+    "kimariji": "かぜを",
+    "kimariji_len": 3
+  },
+  {
+    "no": 49,
+    "poet": "大中臣能宣",
+    "kami_kanji": "御垣守衛士のたく火の夜は燃え",
+    "shimo_kanji": "昼は消えつつものをこそ思へ",
+    "kami_hiragana": "みかきもりゑじのたくひのよるはもえ",
+    "shimo_hiragana": "ひるはきえつつものをこそおもへ",
+    "kimariji": "みかき",
+    "kimariji_len": 3
+  },
+  {
+    "no": 50,
+    "poet": "藤原義孝",
+    "kami_kanji": "君がため惜しからざりし命さへ",
+    "shimo_kanji": "長くもがなと思ひけるかな",
+    "kami_hiragana": "きみがためをしからざりしいのちさへ",
+    "shimo_hiragana": "ながくもがなとおもひけるかな",
+    "kimariji": "きみがためを",
+    "kimariji_len": 6
+  },
+  {
+    "no": 51,
+    "poet": "藤原実方朝臣",
+    "kami_kanji": "かくとだにえやはいぶきのさしも草",
+    "shimo_kanji": "さしも知らじな燃ゆる思ひを",
+    "kami_hiragana": "かくとだにえやはいぶきのさしもぐさ",
+    "shimo_hiragana": "さしもしらじなもゆるおもひを",
+    "kimariji": "かく",
+    "kimariji_len": 2
+  },
+  {
+    "no": 52,
+    "poet": "藤原道信朝臣",
+    "kami_kanji": "明けぬれば暮るるものとは知りながら",
+    "shimo_kanji": "なほ恨めしき朝ぼらけかな",
+    "kami_hiragana": "あけぬればくるるものとはしりながら",
+    "shimo_hiragana": "なほうらめしきあさぼらけかな",
+    "kimariji": "あけ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 53,
+    "poet": "右大将道綱母",
+    "kami_kanji": "嘆きつつひとり寝る夜の明くる間は",
+    "shimo_kanji": "いかに久しきものとかは知る",
+    "kami_hiragana": "なげきつつひとりぬるよのあくるまは",
+    "shimo_hiragana": "いかにひさしきものとかはしる",
+    "kimariji": "なげき",
+    "kimariji_len": 3
+  },
+  {
+    "no": 54,
+    "poet": "儀同三司母",
+    "kami_kanji": "忘れじの行く末まではかたければ",
+    "shimo_kanji": "今日をかぎりの命ともがな",
+    "kami_hiragana": "わすれじのゆくすゑまではかたければ",
+    "shimo_hiragana": "けふをかぎりのいのちともがな",
+    "kimariji": "わすれ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 55,
+    "poet": "大納言公任",
+    "kami_kanji": "滝の音は絶えて久しくなりぬれど",
+    "shimo_kanji": "名こそ流れてなほ聞こえけれ",
+    "kami_hiragana": "たきのおとはたえてひさしくなりぬれど",
+    "shimo_hiragana": "なこそながれてなほきこえけれ",
+    "kimariji": "たき",
+    "kimariji_len": 2
+  },
+  {
+    "no": 56,
+    "poet": "和泉式部",
+    "kami_kanji": "あらざらむこの世のほかの思ひ出に",
+    "shimo_kanji": "今ひとたびの逢ふこともがな",
+    "kami_hiragana": "あらざらむこのよのほかのおもひでに",
+    "shimo_hiragana": "いまひとたびのあふこともがな",
+    "kimariji": "あらざ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 57,
+    "poet": "紫式部",
+    "kami_kanji": "めぐり逢ひて見しやそれとも分かぬ間に",
+    "shimo_kanji": "雲隠れにし夜半の月かな",
+    "kami_hiragana": "めぐりあひてみしやそれともわかぬまに",
+    "shimo_hiragana": "くもがくれにしよはのつきかな",
+    "kimariji": "め",
+    "kimariji_len": 1
+  },
+  {
+    "no": 58,
+    "poet": "大弐三位",
+    "kami_kanji": "有馬山猪名の笹原風吹けば",
+    "shimo_kanji": "いでそよ人を忘れやはする",
+    "kami_hiragana": "ありまやまゐなのささはらかぜふけば",
+    "shimo_hiragana": "いでそよひとをわすれやはする",
+    "kimariji": "ありま",
+    "kimariji_len": 3
+  },
+  {
+    "no": 59,
+    "poet": "赤染衛門",
+    "kami_kanji": "やすらはで寝なましものを小夜更けて",
+    "shimo_kanji": "かたぶくまでの月を見しかな",
+    "kami_hiragana": "やすらはでねなましものをさよふけて",
+    "shimo_hiragana": "かたぶくまでのつきをみしかな",
+    "kimariji": "やす",
+    "kimariji_len": 2
+  },
+  {
+    "no": 60,
+    "poet": "小式部内侍",
+    "kami_kanji": "大江山いく野の道の遠ければ",
+    "shimo_kanji": "まだふみも見ず天の橋立",
+    "kami_hiragana": "おほえやまいくののみちのとほければ",
+    "shimo_hiragana": "まだふみもみずあまのはしだて",
+    "kimariji": "おほえ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 61,
+    "poet": "伊勢大輔",
+    "kami_kanji": "いにしへの奈良の都の八重桜",
+    "shimo_kanji": "けふ九重に匂ひぬるかな",
+    "kami_hiragana": "いにしへのならのみやこのやへざくら",
+    "shimo_hiragana": "けふここのへににほひぬるかな",
+    "kimariji": "いに",
+    "kimariji_len": 2
+  },
+  {
+    "no": 62,
+    "poet": "清少納言",
+    "kami_kanji": "夜をこめて鳥のそら音ははかるとも",
+    "shimo_kanji": "よに逢坂の関はゆるさじ",
+    "kami_hiragana": "よをこめてとりのそらねははかるとも",
+    "shimo_hiragana": "よにあふさかのせきはゆるさじ",
+    "kimariji": "よを",
+    "kimariji_len": 2
+  },
+  {
+    "no": 63,
+    "poet": "左京大夫道雅",
+    "kami_kanji": "今はただ思ひ絶えなむとばかりを",
+    "shimo_kanji": "人づてならでいふよしもがな",
+    "kami_hiragana": "いまはただおもひたえなむとばかりを",
+    "shimo_hiragana": "ひとづてならでいふよしもがな",
+    "kimariji": "いまは",
+    "kimariji_len": 3
+  },
+  {
+    "no": 64,
+    "poet": "権中納言定頼",
+    "kami_kanji": "朝ぼらけ宇治の川霧たえだえに",
+    "shimo_kanji": "あらはれわたる瀬々の網代木",
+    "kami_hiragana": "あさぼらけうぢのかはぎりたえだえに",
+    "shimo_hiragana": "あらはれわたるせぜのあじろぎ",
+    "kimariji": "あさぼらけう",
+    "kimariji_len": 6
+  },
+  {
+    "no": 65,
+    "poet": "相模",
+    "kami_kanji": "恨みわび干さぬ袖だにあるものを",
+    "shimo_kanji": "恋に朽ちなむ名こそ惜しけれ",
+    "kami_hiragana": "うらみわびほさぬそでだにあるものを",
+    "shimo_hiragana": "こひにくちなむなこそをしけれ",
+    "kimariji": "うら",
+    "kimariji_len": 2
+  },
+  {
+    "no": 66,
+    "poet": "前大僧正行尊",
+    "kami_kanji": "もろともにあはれと思え山桜",
+    "shimo_kanji": "花よりほかに知る人もなし",
+    "kami_hiragana": "もろともにあはれとおもへやまざくら",
+    "shimo_hiragana": "はなよりほかにしるひともなし",
+    "kimariji": "もろ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 67,
+    "poet": "周防内侍",
+    "kami_kanji": "春の夜の夢ばかりなる手枕に",
+    "shimo_kanji": "かひなく立たむ名こそ惜しけれ",
+    "kami_hiragana": "はるのよのゆめばかりなるたまくらに",
+    "shimo_hiragana": "かひなくたたむなこそをしけれ",
+    "kimariji": "はるの",
+    "kimariji_len": 3
+  },
+  {
+    "no": 68,
+    "poet": "三条院",
+    "kami_kanji": "心にもあらで憂き夜にながらへば",
+    "shimo_kanji": "恋しかるべき夜半の月かな",
+    "kami_hiragana": "こころにもあらでうきよにながらへば",
+    "shimo_hiragana": "こひしかるべきよはのつきかな",
+    "kimariji": "こころに",
+    "kimariji_len": 4
+  },
+  {
+    "no": 69,
+    "poet": "能因法師",
+    "kami_kanji": "嵐ふく三室の山のもみぢ葉は",
+    "shimo_kanji": "竜田の川の錦なりけり",
+    "kami_hiragana": "あらしふくみむろのやまのもみぢばは",
+    "shimo_hiragana": "たつたのかはのにしきなりけり",
+    "kimariji": "あらし",
+    "kimariji_len": 3
+  },
+  {
+    "no": 70,
+    "poet": "良暹法師",
+    "kami_kanji": "寂しさに宿を立ち出でてながむれば",
+    "shimo_kanji": "いづこも同じ秋の夕暮れ",
+    "kami_hiragana": "さびしさにやどをたちいでてながむれば",
+    "shimo_hiragana": "いづこもおなじあきのゆふぐれ",
+    "kimariji": "さ",
+    "kimariji_len": 1
+  },
+  {
+    "no": 71,
+    "poet": "大納言経信",
+    "kami_kanji": "夕されば門田の稲葉おとづれて",
+    "shimo_kanji": "葦のまろやに秋風ぞ吹く",
+    "kami_hiragana": "ゆふさればかどたのいなばおとづれて",
+    "shimo_hiragana": "あしのまろやにあきかぜぞふく",
+    "kimariji": "ゆふ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 72,
+    "poet": "祐子内親王家紀伊",
+    "kami_kanji": "音に聞く高師の浜のあだ波は",
+    "shimo_kanji": "かけじや袖のぬれもこそすれ",
+    "kami_hiragana": "おとにきくたかしのはまのあだなみは",
+    "shimo_hiragana": "かけじやそでのぬれもこそすれ",
+    "kimariji": "おと",
+    "kimariji_len": 2
+  },
+  {
+    "no": 73,
+    "poet": "権中納言匡房",
+    "kami_kanji": "高砂の尾の上の桜咲きにけり",
+    "shimo_kanji": "外山の霞立たずもあらなむ",
+    "kami_hiragana": "たかさごのをのへのさくらさきにけり",
+    "shimo_hiragana": "とやまのかすみたたずもあらなむ",
+    "kimariji": "たか",
+    "kimariji_len": 2
+  },
+  {
+    "no": 74,
+    "poet": "源俊頼朝臣",
+    "kami_kanji": "憂かりける人を初瀬の山おろしよ",
+    "shimo_kanji": "はげしかれとは祈らぬものを",
+    "kami_hiragana": "うかりけるひとをはつせのやまおろしよ",
+    "shimo_hiragana": "はげしかれとはいのらぬものを",
+    "kimariji": "うか",
+    "kimariji_len": 2
+  },
+  {
+    "no": 75,
+    "poet": "藤原基俊",
+    "kami_kanji": "契りおきしさせもが露を命にて",
+    "shimo_kanji": "あはれ今年の秋もいぬめり",
+    "kami_hiragana": "ちぎりおきしさせもがつゆをいのちにて",
+    "shimo_hiragana": "あはれことしのあきもいぬめり",
+    "kimariji": "ちぎりお",
+    "kimariji_len": 4
+  },
+  {
+    "no": 76,
+    "poet": "法性寺入道前関白太政大臣",
+    "kami_kanji": "わたの原漕ぎ出でて見ればひさかたの",
+    "shimo_kanji": "雲居にまがふ沖つ白波",
+    "kami_hiragana": "わたのはらこぎいでてみればひさかたの",
+    "shimo_hiragana": "くもゐにまがふおきつしらなみ",
+    "kimariji": "わたのはらこ",
+    "kimariji_len": 6
+  },
+  {
+    "no": 77,
+    "poet": "崇徳院",
+    "kami_kanji": "瀬をはやみ岩にせかるる滝川の",
+    "shimo_kanji": "われても末に逢はむとぞ思ふ",
+    "kami_hiragana": "せをはやみいはにせかるるたきがはの",
+    "shimo_hiragana": "われてもすゑにあはむとぞおもふ",
+    "kimariji": "せ",
+    "kimariji_len": 1
+  },
+  {
+    "no": 78,
+    "poet": "源兼昌",
+    "kami_kanji": "淡路島通ふ千鳥の鳴く声に",
+    "shimo_kanji": "いく夜寝覚めぬ須磨の関守",
+    "kami_hiragana": "あはぢしまかよふちどりのなくこゑに",
+    "shimo_hiragana": "いくよねざめぬすまのせきもり",
+    "kimariji": "あはぢ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 79,
+    "poet": "左京大夫顕輔",
+    "kami_kanji": "秋風にたなびく雲のたえ間より",
+    "shimo_kanji": "もれ出づる月の影のさやけさ",
+    "kami_hiragana": "あきかぜにたなびくくものたえまより",
+    "shimo_hiragana": "もれいづるつきのかげのさやけさ",
+    "kimariji": "あきか",
+    "kimariji_len": 3
+  },
+  {
+    "no": 80,
+    "poet": "待賢門院堀河",
+    "kami_kanji": "ながからむ心も知らず黒髪の",
+    "shimo_kanji": "乱れてけさはものをこそ思へ",
+    "kami_hiragana": "ながからむこころもしらずくろかみの",
+    "shimo_hiragana": "みだれてけさはものをこそおもへ",
+    "kimariji": "ながか",
+    "kimariji_len": 3
+  },
+  {
+    "no": 81,
+    "poet": "後徳大寺左大臣",
+    "kami_kanji": "ほととぎす鳴きつる方をながむれば",
+    "shimo_kanji": "ただ有明の月ぞ残れる",
+    "kami_hiragana": "ほととぎすなきつるかたをながむれば",
+    "shimo_hiragana": "ただありあけのつきぞのこれる",
+    "kimariji": "ほ",
+    "kimariji_len": 1
+  },
+  {
+    "no": 82,
+    "poet": "道因法師",
+    "kami_kanji": "思ひわびさても命はあるものを",
+    "shimo_kanji": "憂きに堪へぬは涙なりけり",
+    "kami_hiragana": "おもひわびさてもいのちはあるものを",
+    "shimo_hiragana": "うきにたへぬはなみだなりけり",
+    "kimariji": "おも",
+    "kimariji_len": 2
+  },
+  {
+    "no": 83,
+    "poet": "皇太后宮大夫俊成",
+    "kami_kanji": "世の中よ道こそなけれ思ひ入る",
+    "shimo_kanji": "山の奥にも鹿ぞ鳴くなる",
+    "kami_hiragana": "よのなかよみちこそなけれおもひいる",
+    "shimo_hiragana": "やまのおくにもしかぞなくなる",
+    "kimariji": "よのなかよ",
+    "kimariji_len": 5
+  },
+  {
+    "no": 84,
+    "poet": "藤原清輔朝臣",
+    "kami_kanji": "ながらへばまたこのごろやしのばれむ",
+    "shimo_kanji": "憂しと見し世ぞ今は恋しき",
+    "kami_hiragana": "ながらへばまたこのごろやしのばれむ",
+    "shimo_hiragana": "うしとみしよぞいまはこひしき",
+    "kimariji": "ながら",
+    "kimariji_len": 3
+  },
+  {
+    "no": 85,
+    "poet": "俊恵法師",
+    "kami_kanji": "夜もすがらもの思ふころは明けやらで",
+    "shimo_kanji": "ねやのひまさへつれなかりけり",
+    "kami_hiragana": "よもすがらものおもふころはあけやらで",
+    "shimo_hiragana": "ねやのひまさへつれなかりけり",
+    "kimariji": "よも",
+    "kimariji_len": 2
+  },
+  {
+    "no": 86,
+    "poet": "西行法師",
+    "kami_kanji": "嘆けとて月やはものを思はする",
+    "shimo_kanji": "かこち顔なるわが涙かな",
+    "kami_hiragana": "なげけとてつきやはものをおもはする",
+    "shimo_hiragana": "かこちがほなるわがなみだかな",
+    "kimariji": "なげけ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 87,
+    "poet": "寂蓮法師",
+    "kami_kanji": "村雨の露もまだ干ぬまきの葉に",
+    "shimo_kanji": "霧立ちのぼる秋の夕暮",
+    "kami_hiragana": "むらさめのつゆもまだひぬまきのはに",
+    "shimo_hiragana": "きりたちのぼるあきのゆふぐれ",
+    "kimariji": "む",
+    "kimariji_len": 1
+  },
+  {
+    "no": 88,
+    "poet": "皇嘉門院別当",
+    "kami_kanji": "難波江の葦のかりねのひとよゆゑ",
+    "shimo_kanji": "身をつくしてや恋ひわたるべき",
+    "kami_hiragana": "なにはえのあしのかりねのひとよゆゑ",
+    "shimo_hiragana": "みをつくしてやこひわたるべき",
+    "kimariji": "なにはえ",
+    "kimariji_len": 4
+  },
+  {
+    "no": 89,
+    "poet": "式子内親王",
+    "kami_kanji": "玉の緒よ絶えなば絶えねながらへば",
+    "shimo_kanji": "忍ぶることの弱りもぞする",
+    "kami_hiragana": "たまのをよたえなばたえねながらへば",
+    "shimo_hiragana": "しのぶることのよわりもぞする",
+    "kimariji": "たま",
+    "kimariji_len": 2
+  },
+  {
+    "no": 90,
+    "poet": "殷富門院大輔",
+    "kami_kanji": "見せばやな雄島の海人の袖だにも",
+    "shimo_kanji": "濡れにぞ濡れし色は変はらず",
+    "kami_hiragana": "みせばやなをじまのあまのそでだにも",
+    "shimo_hiragana": "ぬれにぞぬれしいろはかはらず",
+    "kimariji": "みせ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 91,
+    "poet": "後京極摂政前太政大臣",
+    "kami_kanji": "きりぎりす鳴くや霜夜のさむしろに",
+    "shimo_kanji": "衣かたしきひとりかも寝む",
+    "kami_hiragana": "きりぎりすなくやしもよのさむしろに",
+    "shimo_hiragana": "ころもかたしきひとりかもねむ",
+    "kimariji": "きり",
+    "kimariji_len": 2
+  },
+  {
+    "no": 92,
+    "poet": "二条院讃岐",
+    "kami_kanji": "わが袖は潮干に見えぬ沖の石の",
+    "shimo_kanji": "人こそ知らねかわく間もなし",
+    "kami_hiragana": "わがそではしほひにみえぬおきのいしの",
+    "shimo_hiragana": "ひとこそしらねかわくまもなし",
+    "kimariji": "わがそ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 93,
+    "poet": "鎌倉右大臣",
+    "kami_kanji": "世の中は常にもがもな渚漕ぐ",
+    "shimo_kanji": "海人の小舟の綱手かなしも",
+    "kami_hiragana": "よのなかはつねにもがもななぎさこぐ",
+    "shimo_hiragana": "あまのをぶねのつなでかなしも",
+    "kimariji": "よのなかは",
+    "kimariji_len": 5
+  },
+  {
+    "no": 94,
+    "poet": "参議雅経",
+    "kami_kanji": "み吉野の山の秋風小夜更けて",
+    "shimo_kanji": "ふるさと寒く衣うつなり",
+    "kami_hiragana": "みよしののやまのあきかぜさよふけて",
+    "shimo_hiragana": "ふるさとさむくころもうつなり",
+    "kimariji": "みよ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 95,
+    "poet": "前大僧正慈円",
+    "kami_kanji": "おほけなく憂き世の民におほふかな",
+    "shimo_kanji": "わが立つ杣にすみ染の袖",
+    "kami_hiragana": "おほけなくうきよのたみにおほふかな",
+    "shimo_hiragana": "わがたつそまにすみぞめのそで",
+    "kimariji": "おほけ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 96,
+    "poet": "入道前太政大臣",
+    "kami_kanji": "花さそふ嵐の庭の雪ならで",
+    "shimo_kanji": "ふりゆくものはわが身なりけり",
+    "kami_hiragana": "はなさそふあらしのにはのゆきならで",
+    "shimo_hiragana": "ふりゆくものはわがみなりけり",
+    "kimariji": "はなさ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 97,
+    "poet": "権中納言定家",
+    "kami_kanji": "来ぬ人を松帆の浦の夕なぎに",
+    "shimo_kanji": "焼くや藻塩の身もこがれつつ",
+    "kami_hiragana": "こぬひとをまつほのうらのゆふなぎに",
+    "shimo_hiragana": "やくやもしほのみもこがれつつ",
+    "kimariji": "こぬ",
+    "kimariji_len": 2
+  },
+  {
+    "no": 98,
+    "poet": "従二位家隆",
+    "kami_kanji": "風そよぐ楢の小川の夕暮は",
+    "shimo_kanji": "みそぎぞ夏のしるしなりける",
+    "kami_hiragana": "かぜそよぐならのをがはのゆふぐれは",
+    "shimo_hiragana": "みそぎぞなつのしるしなりける",
+    "kimariji": "かぜそ",
+    "kimariji_len": 3
+  },
+  {
+    "no": 99,
+    "poet": "後鳥羽院",
+    "kami_kanji": "人もをし人もうらめしあじきなく",
+    "shimo_kanji": "世を思ふゆゑにもの思ふ身は",
+    "kami_hiragana": "ひともをしひともうらめしあぢきなく",
+    "shimo_hiragana": "よをおもふゆゑにものおもふみは",
+    "kimariji": "ひとも",
+    "kimariji_len": 3
+  },
+  {
+    "no": 100,
+    "poet": "順徳院",
+    "kami_kanji": "百敷や古き軒端のしのぶにも",
+    "shimo_kanji": "なほあまりある昔なりけり",
+    "kami_hiragana": "ももしきやふるきのきばのしのぶにも",
+    "shimo_hiragana": "なほあまりあるむかしなりけり",
+    "kimariji": "もも",
+    "kimariji_len": 2
+  }
+]
