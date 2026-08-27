@@ -33,15 +33,16 @@ def weighted_choice(poems: list[Poem], stats: Stats) -> Poem:
 class RoundResult:
     poem: Poem
     revealed_chars: int
-    answer_no: int | None
+    answer_text: str
     correct: bool
 
 
-def grade(poem: Poem, revealed_chars: int, answer_no: int | None) -> RoundResult:
-    correct = answer_no is not None and answer_no == poem.no
+def grade(poem: Poem, revealed_chars: int, answer_text: str) -> RoundResult:
+    """解答（下の句のひらがな入力）を採点する。前後の空白は無視して比較する。"""
+    correct = answer_text.strip() == poem.shimo_hiragana
     return RoundResult(
         poem=poem,
         revealed_chars=revealed_chars,
-        answer_no=answer_no,
+        answer_text=answer_text,
         correct=correct,
     )

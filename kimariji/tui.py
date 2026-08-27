@@ -7,7 +7,7 @@ import locale
 import unicodedata
 
 from kimariji.data import Poem, load_poems
-from kimariji.quiz import candidates, grade, weighted_choice
+from kimariji.quiz import grade, weighted_choice
 from kimariji.stats import DEFAULT_STATS_PATH, Stats
 
 KIMARIJI_GROUP_LABEL = {
@@ -138,29 +138,6 @@ def length_filter_menu(stdscr, poems, stats) -> None:
             return
 
 
-def _read_answer(stdscr, prompt_y: int) -> tuple[str, bool]:
-    """数字入力を1行受け付ける。Enter で確定 (True)、ESC でスキップ (False)。"""
-    buf = ""
-    curses.curs_set(1)
-    try:
-        while True:
-            h, w = stdscr.getmaxyx()
-            _safe_addstr(stdscr, prompt_y, 4, " " * min(40, w - 5))
-            _safe_addstr(stdscr, prompt_y, 4, f"歌番号を入力 (1-100): {buf}")
-            stdscr.refresh()
-            ch = stdscr.getch()
-            if ch in (curses.KEY_ENTER, 10, 13):
-                return buf, True
-            if ch == 27:
-                return buf, False
-            if ch in (curses.KEY_BACKSPACE, 127, 8):
-                buf = buf[:-1]
-            elif 0 <= ch < 256 and chr(ch).isdigit() and len(buf) < 3:
-                buf += chr(ch)
-    finally:
-        curses.curs_set(0)
-
-
 def practice_screen(
     stdscr,
     poems: tuple[Poem, ...],
@@ -177,50 +154,78 @@ def practice_screen(
     question_no = 0
     while True:
         question_no += 1
-        stdscr.erase()
-        h, w = stdscr.getmaxyx()
-
         poem = weighted_choice(pool, stats)
         revealed = 0
+        buf = ""
         skipped = False
-        answer_no: int | None = None
 
-        while True:
-            stdscr.erase()
-            header = f"第{question_no}問"
-            if length_filter:
-                header += f"（{KIMARIJI_GROUP_LABEL[length_filter]}のみ）"
-            _safe_addstr(stdscr, 1, 4, header, curses.A_BOLD)
+        curses.curs_set(1)
+        try:
+            while True:
+                stdscr.erase()
+                header = f"第{question_no}問"
+                if length_filter:
+                    header += f"（{KIMARIJI_GROUP_LABEL[length_filter]}のみ）"
+                _safe_addstr(stdscr, 1, 4, header, curses.A_BOLD)
 
-            shown = poem.kami_hiragana[:revealed]
-            hidden = "・" * (len(poem.kami_hiragana) - revealed)
-            _safe_addstr(stdscr, 3, 4, "上の句（読み）:")
-            _safe_addstr(stdscr, 4, 6, shown + hidden, curses.A_UNDERLINE)
+                shown = poem.kami_hiragana[:revealed]
+                hidden = "・" * (len(poem.kami_hiragana) - revealed)
+                _safe_addstr(stdscr, 3, 4, "上の句（読み）:")
+                _safe_addstr(stdscr, 4, 6, shown + hidden, curses.A_UNDERLINE)
 
-            _safe_addstr(stdscr, 6, 4, "[Space/Enter] もう1文字表示する")
-            _safe_addstr(stdscr, 7, 4, "[数字キー] 歌番号を入力して解答する")
-            _safe_addstr(stdscr, 8, 4, "[s] この問題をスキップ    [q] メニューに戻る")
-            stdscr.refresh()
+                _safe_addstr(stdscr, 6, 4, "下の句（ひらがな）を入力してください:")
+                _safe_addstr(stdscr, 7, 6, buf, curses.A_UNDERLINE)
 
-            ch = stdscr.getch()
-            if ch in (curses.KEY_ENTER, 10, 13, ord(" ")):
-                revealed = min(revealed + 1, len(poem.kami_hiragana))
-                continue
-            if ch in (ord("q"), 27):
-                return
-            if ch == ord("s"):
-                skipped = True
-                break
-            if 0 <= ch < 256 and chr(ch).isdigit():
-                curses.ungetch(ch)
-                buf, submitted = _read_answer(stdscr, 10)
-                answer_no = int(buf) if submitted and buf else None
-                break
+                _safe_addstr(stdscr, 9, 4, "[Space] もう1文字表示する    [Enter] 解答する")
+                _safe_addstr(stdscr, 10, 4, "[Backspace] 1文字削除    [s] スキップ    [q] メニューに戻る")
+                try:
+                    stdscr.move(7, 6 + _display_width(buf))
+                except curses.error:
+                    pass
+                stdscr.refresh()
+
+                try:
+                    ch = stdscr.get_wch()
+                except curses.error:
+                    continue
+
+                is_special_key = isinstance(ch, int)
+
+                if is_special_key and ch == curses.KEY_BACKSPACE:
+                    buf = buf[:-1]
+                    continue
+                if not is_special_key and ch in ("\x08", "\x7f"):
+                    buf = buf[:-1]
+                    continue
+
+                if (is_special_key and ch in (curses.KEY_ENTER, 10, 13)) or (
+                    not is_special_key and ch in ("\n", "\r")
+                ):
+                    if buf:
+                        break
+                    revealed = min(revealed + 1, len(poem.kami_hiragana))
+                    continue
+
+                if (is_special_key and ch == 27) or (not is_special_key and ch == "\x1b"):
+                    return
+
+                if not is_special_key and ch == " ":
+                    revealed = min(revealed + 1, len(poem.kami_hiragana))
+                    continue
+
+                if not is_special_key and ch == "s" and not buf:
+                    skipped = True
+                    break
+
+                if not is_special_key and ch.isprintable():
+                    buf += ch
+        finally:
+            curses.curs_set(0)
 
         if skipped:
             continue
 
-        result = grade(poem, revealed_chars=revealed, answer_no=answer_no)
+        result = grade(poem, revealed_chars=revealed, answer_text=buf)
         stats.record(poem.no, result.correct)
         stats.save()
         _show_result(stdscr, result)
@@ -233,14 +238,12 @@ def _show_result(stdscr, result) -> None:
     verdict = "正解！" if result.correct else "不正解"
     _safe_addstr(stdscr, 1, 4, verdict, curses.A_BOLD | color)
 
-    if result.answer_no is not None:
-        _safe_addstr(stdscr, 2, 4, f"あなたの解答: {result.answer_no}番")
-    else:
-        _safe_addstr(stdscr, 2, 4, "無回答")
+    answer_display = result.answer_text.strip() if result.answer_text.strip() else "（無回答）"
+    _safe_addstr(stdscr, 2, 4, f"あなたの解答: {answer_display}")
 
     _safe_addstr(stdscr, 4, 4, f"正解: {poem.no}番 {poem.poet}")
     _safe_addstr(stdscr, 5, 4, f"上の句: {poem.kami_kanji}")
-    _safe_addstr(stdscr, 6, 4, f"下の句: {poem.shimo_kanji}")
+    _safe_addstr(stdscr, 6, 4, f"下の句: {poem.shimo_kanji}（{poem.shimo_hiragana}）")
     _safe_addstr(
         stdscr,
         8,

@@ -105,10 +105,12 @@ curses に依存しない純粋関数として実装し、`tui.py` から呼び�
     ため、完全に出題対象から外れることはない）。
   - `random.choices(..., weights=...)` により選択。
 - `RoundResult`（`@dataclass`）: `poem` / `revealed_chars`
-  （解答時点で表示していた文字数） / `answer_no`（ユーザーの解答、
-  未回答は `None`） / `correct`（正誤）を保持する。
-- `grade(poem, revealed_chars, answer_no) -> RoundResult`:
-  `answer_no == poem.no` であれば正解と判定する。
+  （解答時点で表示していた文字数） / `answer_text`（ユーザーが入力した
+  ひらがな文字列、未回答は空文字列） / `correct`（正誤）を保持する。
+- `grade(poem, revealed_chars, answer_text) -> RoundResult`:
+  `answer_text.strip() == poem.shimo_hiragana` であれば正解と判定する
+  （下の句の読みと完全一致するかどうかで採点する。前後の空白のみ
+  無視する）。
 
 ## 4. 成績永続化設計（`stats.py`）
 
@@ -162,18 +164,31 @@ Python の関数呼び出しスタックそのものを利用しており、専�
 
 ### 5.2 出題画面（`practice_screen`）のフロー
 
-1. `weighted_choice` で1首選択し、`revealed`（表示済み文字数）を 0 で
-   初期化。
-2. 内側ループでキー入力を待つ:
-   - Space / Enter: `revealed` を1増やして再描画。
-   - `q` / ESC: 出題モードを終了しメニューへ戻る。
-   - `s`: 現在の問題をスキップ（不正解としては記録しない）。
-   - 数字キー: 押された数字を `curses.ungetch()` でキューに戻した上で
-     `_read_answer()` に処理を委譲し、最大3桁までの数値入力を1行の
-     プロンプトとして受け付ける（Enter で確定、ESC でキャンセル、
-     Backspace で1文字削除）。
-3. スキップ以外の場合、`grade()` で採点し `stats.record()` /
-   `stats.save()` を行った上で `_show_result()` を表示する。
+1. `weighted_choice` で1首選択し、`revealed`（表示済み文字数）と
+   `buf`（解答入力バッファ、ひらがな文字列）を初期化する。
+2. 内側ループでキー入力を待つ。ひらがな（全角）文字を1文字単位で
+   取得する必要があるため、バイト単位の `getch()` ではなく
+   `stdscr.get_wch()` を使用する（`get_wch()` は特殊キーを `int`、
+   通常の文字を `str` として返すため、`isinstance` で分岐する）。
+   - Space（`buf` が空の場合のみ）: `revealed` を1増やして再描画。
+   - Enter（`\n`/`\r`、または `curses.KEY_ENTER`）: `buf` が空なら
+     Space と同様に `revealed` を1増やす。`buf` が非空なら、それを
+     解答として確定しループを抜ける。
+   - Backspace（`\x08`/`\x7f`、または `curses.KEY_BACKSPACE`）:
+     `buf` の末尾1文字を削除する。
+   - ESC（`\x1b` または `27`）: 出題モードを終了しメニューへ戻る。
+   - `s`（`buf` が空の場合のみ）: 現在の問題をスキップ（不正解として
+     は記録しない）。`buf` が非空の場合は通常の入力文字として扱われる
+     （ひらがな入力中に IME 変換前の英字が紛れ込むことはない前提）。
+   - それ以外の印字可能な文字（`str.isprintable()`）: `buf` に追加する。
+   - 入力中はカーソルを表示し（`curses.curs_set(1)`）、`buf` の表示
+     位置に `stdscr.move()` でカーソルを追従させる。ループを抜けた
+     ら `curses.curs_set(0)` に戻す（`try`/`finally` で保証）。
+3. スキップ以外の場合、`grade(poem, revealed, buf)` で採点し
+   `stats.record()` / `stats.save()` を行った上で `_show_result()`
+   を表示する。採点は入力された `buf`（前後の空白を除く）が
+   `poem.shimo_hiragana`（下の句の読み）と完全一致するかどうかで
+   判定する。
 4. `_show_result()` で何かキーが押されたら 1. に戻り次の問題へ進む。
 
 `weak_only=True` の場合は、`stats.weakest()` の上位30首を出題プールと
