@@ -1,0 +1,69 @@
+name: Monitor EU Notified Bodies list
+
+on:
+  schedule:
+    # daily at 06:00 UTC
+    - cron: "0 6 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          playwright install --with-deps chromium
+
+      - name: Run monitor
+        id: monitor
+        run: |
+          set +e
+          python scripts/monitor_notified_bodies.py \
+            --state-file state/notified_bodies.json \
+            --debug-dir debug \
+            > report.txt
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          set -e
+          cat report.txt
+
+      - name: Upload debug artifacts on failure
+        if: steps.monitor.outputs.exit_code == '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: debug
+          path: debug
+
+      - name: Create issue on new entries
+        if: steps.monitor.outputs.exit_code == '3'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('report.txt', 'utf8');
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `Notified Bodies list changed - ${new Date().toISOString().slice(0, 10)}`,
+              body: "```\n" + body + "\n```",
+              labels: ["notified-bodies-alert"],
+            });
+
+      - name: Commit updated snapshot
+        if: always() && steps.monitor.outputs.exit_code != '1'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add state/notified_bodies.json
+          git diff --cached --quiet || git commit -m "chore: update notified bodies snapshot"
+          git push
