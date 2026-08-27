@@ -155,7 +155,7 @@ def practice_screen(
     while True:
         question_no += 1
         poem = weighted_choice(pool, stats)
-        revealed = 0
+        revealed = 1
         buf = ""
         skipped = False
 
