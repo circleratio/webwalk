@@ -209,6 +209,9 @@ def practice_screen(
                 if (is_special_key and ch == 27) or (not is_special_key and ch == "\x1b"):
                     return
 
+                if not is_special_key and ch == "q" and not buf:
+                    return
+
                 if not is_special_key and ch == " ":
                     revealed = min(revealed + 1, len(poem.kami_hiragana))
                     continue
