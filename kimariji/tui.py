@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import curses
 import locale
+import unicodedata
 
 from kimariji.data import Poem, load_poems
 from kimariji.quiz import candidates, grade, weighted_choice
@@ -19,12 +20,34 @@ KIMARIJI_GROUP_LABEL = {
 }
 
 
+def _char_width(ch: str) -> int:
+    return 2 if unicodedata.east_asian_width(ch) in ("W", "F") else 1
+
+
+def _display_width(text: str) -> int:
+    return sum(_char_width(c) for c in text)
+
+
+def _truncate_to_width(text: str, max_width: int) -> str:
+    if max_width <= 0:
+        return ""
+    out = []
+    used = 0
+    for ch in text:
+        w = _char_width(ch)
+        if used + w > max_width:
+            break
+        out.append(ch)
+        used += w
+    return "".join(out)
+
+
 def _safe_addstr(win, y: int, x: int, text: str, attr: int = 0) -> None:
     max_y, max_x = win.getmaxyx()
     if y < 0 or y >= max_y or x < 0 or x >= max_x:
         return
     try:
-        win.addstr(y, x, text[: max(0, max_x - x - 1)], attr)
+        win.addstr(y, x, _truncate_to_width(text, max_x - x - 1), attr)
     except curses.error:
         pass
 
@@ -55,7 +78,7 @@ def main_menu(stdscr, poems: tuple[Poem, ...], stats: Stats) -> None:
         stdscr.erase()
         h, w = stdscr.getmaxyx()
         title = "百人一首 決まり字 暗記トレーナー"
-        _safe_addstr(stdscr, 1, max(0, (w - len(title) * 2) // 2), title, curses.A_BOLD)
+        _safe_addstr(stdscr, 1, max(0, (w - _display_width(title)) // 2), title, curses.A_BOLD)
         correct, wrong = stats.totals()
         total = correct + wrong
         acc = f"{correct}/{total} 正解 ({correct / total * 100:.1f}%)" if total else "まだ記録がありません"
