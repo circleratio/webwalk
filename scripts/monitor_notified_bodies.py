@@ -54,10 +54,15 @@ USER_AGENT = "Mozilla/5.0 (compatible; NotifiedBodyMonitor/1.0; +monitoring scri
 
 NAME_HINTS = ("name", "organisation", "organization", "denomination", "bodyname")
 COUNTRY_HINTS = ("country",)
-NUMBER_HINTS = ("nbnumber", "notifiedbodynumber", "number", "nbid", "code")
+# Note: "code" is intentionally excluded here (unlike ID_KEY_CANDIDATES below) because
+# it also matches unrelated facet fields such as "legislationCode", which would make
+# e.g. the legislation list falsely look like a notified-body list.
+NUMBER_HINTS = ("nbnumber", "notifiedbodynumber", "number", "nbid")
 ID_KEY_CANDIDATES = (
     "nbNumber",
     "notifiedBodyNumber",
+    "bodyNumber",
+    "organizationRefeCdAndType",
     "number",
     "nbId",
     "id",
@@ -71,10 +76,38 @@ def looks_like_nb_entry(entry: dict, min_fields: int = 3) -> bool:
         return False
     keys_lower = [k.lower() for k in entry.keys()]
     has_name = any(any(h in k for h in NAME_HINTS) for k in keys_lower)
-    has_number_or_country = any(
-        any(h in k for h in NUMBER_HINTS + COUNTRY_HINTS) for k in keys_lower
-    ) or "id" in keys_lower
-    return has_name and has_number_or_country
+    # Require an actual number-like field (not just "country"/"id"), since plain
+    # facet/lookup lists (countries, legislations, ...) also have a name + a
+    # generic "<x>Id" field and would otherwise be false positives.
+    has_number = any(any(h in k for h in NUMBER_HINTS) for k in keys_lower)
+    return has_name and has_number
+
+
+def unwrap_jsondoc_list(items: list) -> Optional[list]:
+    """Unwrap the EC es-search-api envelope pattern.
+
+    Some EC "search-api" endpoints (used e.g. by the NANDO notified-body list)
+    wrap each hit's real record as a JSON-encoded string in
+    item["metadata"]["jsonDoc"][0] instead of a nested JSON object, so the
+    plain dict/list recursion below never sees the actual fields. Detect that
+    shape and return the parsed records instead.
+    """
+    if not items or not all(isinstance(x, dict) for x in items):
+        return None
+    unwrapped = []
+    for item in items:
+        metadata = item.get("metadata")
+        json_doc = metadata.get("jsonDoc") if isinstance(metadata, dict) else None
+        if not (isinstance(json_doc, list) and json_doc and isinstance(json_doc[0], str)):
+            return None
+        try:
+            record = json.loads(json_doc[0])
+        except json.JSONDecodeError:
+            return None
+        if not isinstance(record, dict):
+            return None
+        unwrapped.append(record)
+    return unwrapped
 
 
 def find_entry_list(
@@ -97,6 +130,9 @@ def find_entry_list(
                 node[0], min_fields
             ):
                 candidates.append(node)
+            unwrapped = unwrap_jsondoc_list(node)
+            if unwrapped and looks_like_nb_entry(unwrapped[0], min_fields):
+                candidates.append(unwrapped)
             for v in node:
                 visit(v)
         elif isinstance(node, dict):
