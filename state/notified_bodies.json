@@ -1,6 +1,6 @@
 {
   "url": "https://webgate.ec.europa.eu/single-market-compliance-space/notified-bodies/notified-body-list?filter=legislationId:162960,notificationStatusId:1",
-  "fetched_at": "2026-09-03T10:16:59.909920+00:00",
+  "fetched_at": "2026-09-04T10:05:41.457541+00:00",
   "source": "api-capture:https://webgate.ec.europa.eu/es/search-api/rest/search/grouped",
   "entries": {
     "1008": {
@@ -29,6 +29,7 @@
       "notificationAccreditationFl": "N",
       "notificationMonitoringReviewDate": "2030-03-24T00:00:00Z",
       "notificationLastApprovalDate": "2026-01-30T00:00:00Z",
+      "notificationLegislationCode": "Regulation 2023/1542",
       "notificationLegislationKeyword": "Regulation (EU) 2023/1542 concerning batteries and waste batteries",
       "notificationLegislationName": [
         {
@@ -79,79 +80,6 @@
         "productsHierarchy": "N"
       }
     },
-    "402": {
-      "csId": "4bd545c2143dd6ad1e4fa2e3ecabd7c911e76d58",
-      "notificationId": 1026765,
-      "organizationName": "RISE Research Institutes of Sweden AB",
-      "organizationRefeCd": "EPOS_43724",
-      "organizationRefeCdAndType": "EPOS_43724NB",
-      "bodyNumber": 402,
-      "bodyTypeId": 3,
-      "bodyTypeAbbr": "NB",
-      "displayTypeAndNumber": "NB 0402",
-      "organizationCountryId": 752,
-      "organizationCountryName": "Sweden",
-      "organizationStreetAndNumber": "Box 857",
-      "organizationZipCodeAndCity": "501 15 BORAS",
-      "organizationPhone": "+46 (0) 10 516 50 00",
-      "organizationFax": "+46 (0) 33 13 55 02",
-      "organizationEmail": "info@ri.se",
-      "organizationWebsite": "www.ri.se",
-      "organizationVersion": 48,
-      "notificationStatusId": 1,
-      "notificationIfLatestVersion": "Y",
-      "notificationVersion": 1,
-      "notificationLegislationId": 162960,
-      "notificationUpdateDate": "2026-07-21T00:00:24Z",
-      "notificationAccreditationFl": "Y",
-      "notificationAccreditationExpiryDate": "2029-04-01T00:00:00Z",
-      "notificationLastApprovalDate": "2026-07-21T00:00:00Z",
-      "notificationLegislationKeyword": "Regulation (EU) 2023/1542 concerning batteries and waste batteries",
-      "notificationLegislationName": [
-        {
-          "language": "EN",
-          "name": "Regulation (EU) 2023/1542 concerning batteries and waste batteries"
-        }
-      ],
-      "notificationProductIds": [
-        162990,
-        162992,
-        162994,
-        162980,
-        162988
-      ],
-      "notificationProductKeyword": [
-        "Article 13",
-        "Article 06",
-        "Article 12",
-        "Article 14",
-        "Article 10"
-      ],
-      "notificationProcedureIds": [
-        163012
-      ],
-      "notificationProcedureKeyword": [
-        "Module D1"
-      ],
-      "notificationAnnexIds": [
-        163014
-      ],
-      "notificationAnnexKeyword": [
-        "Article 17 and Annex VIII"
-      ],
-      "notificationTemplate": {
-        "id": 141,
-        "profile": "Battery",
-        "horizTechComp": "N",
-        "products": "Requirements and Obligations",
-        "limitationsV2": "Comments",
-        "comments": null,
-        "remark": null,
-        "inVitroMed": "N",
-        "canAddProducts": "N",
-        "productsHierarchy": "N"
-      }
-    },
     "413": {
       "csId": "e296549e3086cb721f87e6a92542e6617325bbdf",
       "notificationId": 1026771,
@@ -178,6 +106,7 @@
       "notificationAccreditationFl": "Y",
       "notificationAccreditationExpiryDate": "2026-12-01T00:00:00Z",
       "notificationLastApprovalDate": "2026-07-19T00:00:00Z",
+      "notificationLegislationCode": "Regulation 2023/1542",
       "notificationLegislationKeyword": "Regulation (EU) 2023/1542 concerning batteries and waste batteries",
       "notificationLegislationName": [
         {
@@ -256,6 +185,7 @@
       "notificationAccreditationFl": "Y",
       "notificationAccreditationExpiryDate": "2030-03-20T00:00:00Z",
       "notificationLastApprovalDate": "2026-07-15T00:00:00Z",
+      "notificationLegislationCode": "Regulation 2023/1542",
       "notificationLegislationKeyword": "Regulation (EU) 2023/1542 concerning batteries and waste batteries",
       "ancestorBodyNumber": [
         403
@@ -287,6 +217,80 @@
       "notificationProcedureKeyword": [
         "Module D1",
         "Module G"
+      ],
+      "notificationAnnexIds": [
+        163014
+      ],
+      "notificationAnnexKeyword": [
+        "Article 17 and Annex VIII"
+      ],
+      "notificationTemplate": {
+        "id": 141,
+        "profile": "Battery",
+        "horizTechComp": "N",
+        "products": "Requirements and Obligations",
+        "limitationsV2": "Comments",
+        "comments": null,
+        "remark": null,
+        "inVitroMed": "N",
+        "canAddProducts": "N",
+        "productsHierarchy": "N"
+      }
+    },
+    "402": {
+      "csId": "4bd545c2143dd6ad1e4fa2e3ecabd7c911e76d58",
+      "notificationId": 1026765,
+      "organizationName": "RISE Research Institutes of Sweden AB",
+      "organizationRefeCd": "EPOS_43724",
+      "organizationRefeCdAndType": "EPOS_43724NB",
+      "bodyNumber": 402,
+      "bodyTypeId": 3,
+      "bodyTypeAbbr": "NB",
+      "displayTypeAndNumber": "NB 0402",
+      "organizationCountryId": 752,
+      "organizationCountryName": "Sweden",
+      "organizationStreetAndNumber": "Box 857",
+      "organizationZipCodeAndCity": "501 15 BORAS",
+      "organizationPhone": "+46 (0) 10 516 50 00",
+      "organizationFax": "+46 (0) 33 13 55 02",
+      "organizationEmail": "info@ri.se",
+      "organizationWebsite": "www.ri.se",
+      "organizationVersion": 48,
+      "notificationStatusId": 1,
+      "notificationIfLatestVersion": "Y",
+      "notificationVersion": 1,
+      "notificationLegislationId": 162960,
+      "notificationUpdateDate": "2026-07-21T00:00:24Z",
+      "notificationAccreditationFl": "Y",
+      "notificationAccreditationExpiryDate": "2029-04-01T00:00:00Z",
+      "notificationLastApprovalDate": "2026-07-21T00:00:00Z",
+      "notificationLegislationCode": "Regulation 2023/1542",
+      "notificationLegislationKeyword": "Regulation (EU) 2023/1542 concerning batteries and waste batteries",
+      "notificationLegislationName": [
+        {
+          "language": "EN",
+          "name": "Regulation (EU) 2023/1542 concerning batteries and waste batteries"
+        }
+      ],
+      "notificationProductIds": [
+        162990,
+        162992,
+        162994,
+        162980,
+        162988
+      ],
+      "notificationProductKeyword": [
+        "Article 13",
+        "Article 06",
+        "Article 12",
+        "Article 14",
+        "Article 10"
+      ],
+      "notificationProcedureIds": [
+        163012
+      ],
+      "notificationProcedureKeyword": [
+        "Module D1"
       ],
       "notificationAnnexIds": [
         163014
