@@ -1,6 +1,6 @@
 {
   "url": "https://webgate.ec.europa.eu/single-market-compliance-space/notified-bodies/notified-body-list?filter=legislationId:162960,notificationStatusId:1",
-  "fetched_at": "2026-09-18T10:11:09.168561+00:00",
+  "fetched_at": "2026-09-19T09:51:48.674493+00:00",
   "source": "api-capture:https://webgate.ec.europa.eu/es/search-api/rest/search/grouped",
   "entries": {
     "1008": {
@@ -60,85 +60,6 @@
       "notificationProcedureKeyword": [
         "Module G",
         "Module D1"
-      ],
-      "notificationAnnexIds": [
-        163014
-      ],
-      "notificationAnnexKeyword": [
-        "Article 17 and Annex VIII"
-      ],
-      "notificationTemplate": {
-        "id": 141,
-        "profile": "Battery",
-        "horizTechComp": "N",
-        "products": "Requirements and Obligations",
-        "limitationsV2": "Comments",
-        "comments": null,
-        "remark": null,
-        "inVitroMed": "N",
-        "canAddProducts": "N",
-        "productsHierarchy": "N"
-      }
-    },
-    "413": {
-      "csId": "e296549e3086cb721f87e6a92542e6617325bbdf",
-      "notificationId": 1026771,
-      "organizationName": "INTERTEK SEMKO AB",
-      "organizationRefeCd": "EPOS_43735",
-      "organizationRefeCdAndType": "EPOS_43735NB",
-      "bodyNumber": 413,
-      "bodyTypeId": 3,
-      "bodyTypeAbbr": "NB",
-      "displayTypeAndNumber": "NB 0413",
-      "organizationCountryId": 752,
-      "organizationCountryName": "Sweden",
-      "organizationStreetAndNumber": "Torshamnsgatan 43\r\nBox 1103",
-      "organizationZipCodeAndCity": "SE-164 22 KISTA",
-      "organizationPhone": "+46 8 750 01 68",
-      "organizationEmail": "ncb.sweden@intertek.com",
-      "organizationWebsite": "www.intertek.se",
-      "organizationVersion": 14,
-      "notificationStatusId": 1,
-      "notificationIfLatestVersion": "Y",
-      "notificationVersion": 2,
-      "notificationLegislationId": 162960,
-      "notificationUpdateDate": "2026-07-19T00:00:08Z",
-      "notificationAccreditationFl": "Y",
-      "notificationAccreditationExpiryDate": "2026-12-01T00:00:00Z",
-      "notificationLastApprovalDate": "2026-07-19T00:00:00Z",
-      "notificationLegislationCode": "Regulation 2023/1542",
-      "notificationLegislationKeyword": "Regulation (EU) 2023/1542 concerning batteries and waste batteries",
-      "notificationLegislationName": [
-        {
-          "language": "EN",
-          "name": "Regulation (EU) 2023/1542 concerning batteries and waste batteries"
-        }
-      ],
-      "notificationProductIds": [
-        162982,
-        163031,
-        162990,
-        162992,
-        162994,
-        162980,
-        162988
-      ],
-      "notificationProductKeyword": [
-        "Article 08",
-        "Article 14",
-        "Article 12",
-        "Article 06",
-        "Article 10",
-        "Article 13",
-        "Article 07"
-      ],
-      "notificationProcedureIds": [
-        163012,
-        163013
-      ],
-      "notificationProcedureKeyword": [
-        "Module D1",
-        "Module G"
       ],
       "notificationAnnexIds": [
         163014
@@ -283,6 +204,85 @@
         "Article 12",
         "Article 14",
         "Article 06"
+      ],
+      "notificationProcedureIds": [
+        163012,
+        163013
+      ],
+      "notificationProcedureKeyword": [
+        "Module D1",
+        "Module G"
+      ],
+      "notificationAnnexIds": [
+        163014
+      ],
+      "notificationAnnexKeyword": [
+        "Article 17 and Annex VIII"
+      ],
+      "notificationTemplate": {
+        "id": 141,
+        "profile": "Battery",
+        "horizTechComp": "N",
+        "products": "Requirements and Obligations",
+        "limitationsV2": "Comments",
+        "comments": null,
+        "remark": null,
+        "inVitroMed": "N",
+        "canAddProducts": "N",
+        "productsHierarchy": "N"
+      }
+    },
+    "413": {
+      "csId": "cc9753858e83aa25f849f0333438d00523344a56",
+      "notificationId": 1028045,
+      "organizationName": "INTERTEK SEMKO AB",
+      "organizationRefeCd": "EPOS_43735",
+      "organizationRefeCdAndType": "EPOS_43735NB",
+      "bodyNumber": 413,
+      "bodyTypeId": 3,
+      "bodyTypeAbbr": "NB",
+      "displayTypeAndNumber": "NB 0413",
+      "organizationCountryId": 752,
+      "organizationCountryName": "Sweden",
+      "organizationStreetAndNumber": "Torshamnsgatan 43\r\nBox 1103",
+      "organizationZipCodeAndCity": "SE-164 22 KISTA",
+      "organizationPhone": "+46 8 750 01 68",
+      "organizationEmail": "ncb.sweden@intertek.com",
+      "organizationWebsite": "www.intertek.se",
+      "organizationVersion": 14,
+      "notificationStatusId": 1,
+      "notificationIfLatestVersion": "Y",
+      "notificationVersion": 3,
+      "notificationLegislationId": 162960,
+      "notificationUpdateDate": "2026-09-18T12:45:27Z",
+      "notificationAccreditationFl": "Y",
+      "notificationAccreditationExpiryDate": "2031-01-01T00:00:00Z",
+      "notificationLastApprovalDate": "2026-09-18T00:00:00Z",
+      "notificationLegislationCode": "Regulation 2023/1542",
+      "notificationLegislationKeyword": "Regulation (EU) 2023/1542 concerning batteries and waste batteries",
+      "notificationLegislationName": [
+        {
+          "language": "EN",
+          "name": "Regulation (EU) 2023/1542 concerning batteries and waste batteries"
+        }
+      ],
+      "notificationProductIds": [
+        162982,
+        163031,
+        162990,
+        162992,
+        162994,
+        162980,
+        162988
+      ],
+      "notificationProductKeyword": [
+        "Article 06",
+        "Article 10",
+        "Article 14",
+        "Article 08",
+        "Article 07",
+        "Article 13",
+        "Article 12"
       ],
       "notificationProcedureIds": [
         163012,
