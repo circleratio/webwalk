@@ -1,6 +1,6 @@
 {
   "url": "https://webgate.ec.europa.eu/single-market-compliance-space/notified-bodies/notified-body-list?filter=legislationId:162960,notificationStatusId:1",
-  "fetched_at": "2026-10-09T12:13:20.586496+00:00",
+  "fetched_at": "2026-10-10T11:30:39.241655+00:00",
   "source": "api-capture:https://webgate.ec.europa.eu/es/search-api/rest/search/grouped",
   "entries": {
     "1008": {
@@ -159,84 +159,6 @@
         "productsHierarchy": "N"
       }
     },
-    "598": {
-      "csId": "bd5805f373865f8750a0645e9abdfdbc86d32d33",
-      "notificationId": 1026683,
-      "organizationName": "SGS FIMKO OY",
-      "organizationRefeCd": "EPOS_43920",
-      "organizationRefeCdAndType": "EPOS_43920NB",
-      "bodyNumber": 598,
-      "bodyTypeId": 3,
-      "bodyTypeAbbr": "NB",
-      "displayTypeAndNumber": "NB 0598",
-      "organizationCountryId": 246,
-      "organizationCountryName": "Finland",
-      "organizationStreetAndNumber": "Takomotie 8",
-      "organizationZipCodeAndCity": "00380 HELSINKI",
-      "organizationPhone": "+358 9 696 361",
-      "organizationEmail": "nb.fimko@sgs.com",
-      "organizationWebsite": "www.sgs.fi",
-      "organizationVersion": 18,
-      "notificationStatusId": 1,
-      "notificationIfLatestVersion": "Y",
-      "notificationVersion": 1,
-      "notificationLegislationId": 162960,
-      "notificationUpdateDate": "2026-07-15T00:00:23Z",
-      "notificationAccreditationFl": "Y",
-      "notificationAccreditationExpiryDate": "2030-03-20T00:00:00Z",
-      "notificationLastApprovalDate": "2026-07-15T00:00:00Z",
-      "notificationLegislationCode": "Regulation 2023/1542",
-      "notificationLegislationKeyword": "Regulation (EU) 2023/1542 concerning batteries and waste batteries",
-      "ancestorBodyNumber": [
-        403
-      ],
-      "notificationLegislationName": [
-        {
-          "language": "EN",
-          "name": "Regulation (EU) 2023/1542 concerning batteries and waste batteries"
-        }
-      ],
-      "notificationProductIds": [
-        162990,
-        162992,
-        162994,
-        162980,
-        162988
-      ],
-      "notificationProductKeyword": [
-        "Article 10",
-        "Article 13",
-        "Article 12",
-        "Article 14",
-        "Article 06"
-      ],
-      "notificationProcedureIds": [
-        163012,
-        163013
-      ],
-      "notificationProcedureKeyword": [
-        "Module D1",
-        "Module G"
-      ],
-      "notificationAnnexIds": [
-        163014
-      ],
-      "notificationAnnexKeyword": [
-        "Article 17 and Annex VIII"
-      ],
-      "notificationTemplate": {
-        "id": 141,
-        "profile": "Battery",
-        "horizTechComp": "N",
-        "products": "Requirements and Obligations",
-        "limitationsV2": "Comments",
-        "comments": null,
-        "remark": null,
-        "inVitroMed": "N",
-        "canAddProducts": "N",
-        "productsHierarchy": "N"
-      }
-    },
     "402": {
       "csId": "4bd545c2143dd6ad1e4fa2e3ecabd7c911e76d58",
       "notificationId": 1026765,
@@ -290,6 +212,90 @@
         163012
       ],
       "notificationProcedureKeyword": [
+        "Module D1"
+      ],
+      "notificationAnnexIds": [
+        163014
+      ],
+      "notificationAnnexKeyword": [
+        "Article 17 and Annex VIII"
+      ],
+      "notificationTemplate": {
+        "id": 141,
+        "profile": "Battery",
+        "horizTechComp": "N",
+        "products": "Requirements and Obligations",
+        "limitationsV2": "Comments",
+        "comments": null,
+        "remark": null,
+        "inVitroMed": "N",
+        "canAddProducts": "N",
+        "productsHierarchy": "N"
+      }
+    },
+    "598": {
+      "csId": "caf2c17168dcbc371e2ed2748569c0794604c11b",
+      "notificationId": 1028126,
+      "organizationName": "SGS FIMKO OY",
+      "organizationRefeCd": "EPOS_43920",
+      "organizationRefeCdAndType": "EPOS_43920NB",
+      "bodyNumber": 598,
+      "bodyTypeId": 3,
+      "bodyTypeAbbr": "NB",
+      "displayTypeAndNumber": "NB 0598",
+      "organizationCountryId": 246,
+      "organizationCountryName": "Finland",
+      "organizationStreetAndNumber": "Takomotie 8",
+      "organizationZipCodeAndCity": "00380 HELSINKI",
+      "organizationPhone": "+358 9 696 361",
+      "organizationEmail": "nb.fimko@sgs.com",
+      "organizationWebsite": "www.sgs.fi",
+      "organizationVersion": 18,
+      "notificationStatusId": 1,
+      "notificationIfLatestVersion": "Y",
+      "notificationVersion": 2,
+      "notificationLegislationId": 162960,
+      "notificationUpdateDate": "2026-10-10T00:00:10Z",
+      "notificationAccreditationFl": "Y",
+      "notificationAccreditationExpiryDate": "2030-03-20T00:00:00Z",
+      "notificationLastApprovalDate": "2026-10-10T00:00:00Z",
+      "notificationLegislationCode": "Regulation 2023/1542",
+      "notificationLegislationKeyword": "Regulation (EU) 2023/1542 concerning batteries and waste batteries",
+      "ancestorBodyNumber": [
+        403
+      ],
+      "notificationLegislationName": [
+        {
+          "language": "EN",
+          "name": "Regulation (EU) 2023/1542 concerning batteries and waste batteries"
+        }
+      ],
+      "notificationProductIds": [
+        162986,
+        162982,
+        163031,
+        162990,
+        162992,
+        162994,
+        162980,
+        162988
+      ],
+      "notificationProductKeyword": [
+        "Article 13",
+        "Article 09",
+        "Article 14",
+        "Article 08",
+        "Article 06",
+        "Article 12",
+        "Article 10",
+        "Article 07"
+      ],
+      "notificationProcedureIds": [
+        163012,
+        163013
+      ],
+      "notificationProcedureKeyword": [
+        "Module G",
         "Module D1"
       ],
       "notificationAnnexIds": [
