@@ -1,6 +1,6 @@
 {
   "url": "https://webgate.ec.europa.eu/single-market-compliance-space/notified-bodies/notified-body-list?filter=legislationId:162960,notificationStatusId:1",
-  "fetched_at": "2026-11-07T12:00:42.009867+00:00",
+  "fetched_at": "2026-11-08T12:21:47.945346+00:00",
   "source": "api-capture:https://webgate.ec.europa.eu/es/search-api/rest/search/grouped",
   "entries": {
     "402": {
@@ -299,6 +299,82 @@
       "notificationProcedureKeyword": [
         "Module D1",
         "Module G"
+      ],
+      "notificationAnnexIds": [
+        163014
+      ],
+      "notificationAnnexKeyword": [
+        "Article 17 and Annex VIII"
+      ],
+      "notificationTemplate": {
+        "id": 141,
+        "profile": "Battery",
+        "horizTechComp": "N",
+        "products": "Requirements and Obligations",
+        "limitationsV2": "Comments",
+        "comments": null,
+        "remark": null,
+        "inVitroMed": "N",
+        "canAddProducts": "N",
+        "productsHierarchy": "N"
+      }
+    },
+    "3028": {
+      "csId": "f13aa513ff93981bec4fc3758adfd8539170349c",
+      "notificationId": 1027868,
+      "organizationName": "BUREAU VERITAS  MAGYARORSZÁG Minőségellenőrző Kft.",
+      "organizationRefeCd": "EPOS_271317",
+      "organizationRefeCdAndType": "EPOS_271317NB",
+      "bodyNumber": 3028,
+      "bodyTypeId": 3,
+      "bodyTypeAbbr": "NB",
+      "displayTypeAndNumber": "NB 3028",
+      "organizationCountryId": 348,
+      "organizationCountryName": "Hungary",
+      "organizationStreetAndNumber": "Budafoki út 56.",
+      "organizationZipCodeAndCity": "1117 Budapest",
+      "organizationPhone": "+36202689132",
+      "organizationEmail": "shopinspectionhungarymail@bureauveritas.com",
+      "organizationVersion": 1,
+      "notificationStatusId": 1,
+      "notificationIfLatestVersion": "Y",
+      "notificationVersion": 1,
+      "notificationLegislationId": 162960,
+      "notificationUpdateDate": "2026-11-08T00:00:28Z",
+      "notificationAccreditationFl": "N",
+      "notificationMonitoringReviewDate": "2031-09-08T00:00:00Z",
+      "notificationLastApprovalDate": "2026-11-08T00:00:00Z",
+      "notificationLegislationCode": "Regulation 2023/1542",
+      "notificationLegislationKeyword": "Regulation (EU) 2023/1542 concerning batteries and waste batteries",
+      "notificationLegislationName": [
+        {
+          "language": "EN",
+          "name": "Regulation (EU) 2023/1542 concerning batteries and waste batteries"
+        }
+      ],
+      "notificationProductIds": [
+        162982,
+        163031,
+        162992,
+        162994,
+        162980,
+        162988
+      ],
+      "notificationProductKeyword": [
+        "Article 13",
+        "Article 07",
+        "Article 08",
+        "Article 10",
+        "Article 06",
+        "Article 14"
+      ],
+      "notificationProcedureIds": [
+        163012,
+        163013
+      ],
+      "notificationProcedureKeyword": [
+        "Module G",
+        "Module D1"
       ],
       "notificationAnnexIds": [
         163014
